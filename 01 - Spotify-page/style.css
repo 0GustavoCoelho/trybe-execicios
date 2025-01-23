@@ -6,7 +6,7 @@
 header {
     background-color: black;
     display: flex;
-    padding: 15 px;
+    padding: 15px;
 }
 
 header div {
@@ -76,4 +76,33 @@ header div {
     color: white;
     padding: 10px 35px;
     border-radius: 60px;
+}
+
+.por-que-ser-premium{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.por-que-ser-premium h2{
+    font-size: 30px;
+    padding: 70px 0;
+}
+
+.Premium-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Premium-items img{
+    width: 120px;
+    padding-bottom: 20px;
+}
+
+.Premium-items div{
+    padding: 0 40px 70px 0;
+}
+
+.Premium-items h4{
+    padding-bottom: 8px;
 }
