@@ -1,4 +1,5 @@
 * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -37,17 +38,17 @@ header div {
     color: white;
 }
 
-.section-premium div{
+.section-premium div {
     width: 80%;
     margin: auto;
 }
 
-.section-premium h1{
+.section-premium h1 {
     font-size: 40px;
     padding: 40px 0;
 }
 
-.section-premium h2{
+.section-premium h2 {
     font-size: 20px;
     padding-bottom: 40px;
 }
@@ -58,11 +59,11 @@ header div {
     font-size: 10px;
 }
 
-.section-premium a{
+.section-premium a {
     color: white;
 }
 
-#btn-comece-agora{
+#btn-comece-agora {
     background-color: black;
     color: white;
     padding: 10px 35px;
@@ -70,7 +71,7 @@ header div {
     border: 1px solid black;
 }
 
-#btn-ver-planos{
+#btn-ver-planos {
     background-color: rgb(29, 177, 222);
     border: 1px solid white;
     color: white;
@@ -78,31 +79,76 @@ header div {
     border-radius: 60px;
 }
 
-.por-que-ser-premium{
+.por-que-ser-premium {
     text-align: center;
     width: 80%;
     margin: auto;
 }
 
-.por-que-ser-premium h2{
+.por-que-ser-premium h2 {
     font-size: 30px;
     padding: 70px 0;
 }
 
-.Premium-items{
+.Premium-items {
     display: flex;
     justify-content: space-evenly;
 }
 
-.Premium-items img{
+.Premium-items img {
     width: 120px;
     padding-bottom: 20px;
 }
 
-.Premium-items div{
+.Premium-items div {
     padding: 0 40px 70px 0;
 }
 
-.Premium-items h4{
+.Premium-items h4 {
     padding-bottom: 8px;
+}
+
+.section-chose-plane {
+    background-color: #efefef;
+
+}
+
+.section-chose-plane div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.section-chose-plane h2 {
+    font-size: 30px;
+    padding-top: 70px;
+}
+
+.section-chose-plane h3 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+.credit-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.credit-cards img{
+    width: 26px;
+}
+
+.section-plane{
+    display: flex;
+}
+
+.plane-style{
+    background-color: white;
+    box-shadow: 1px 1px 5px  rgb(100, 100, 100);
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 500px;
+    max-width: 180px;
+    font-size: 15px;
 }
