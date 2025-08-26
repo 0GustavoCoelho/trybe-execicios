@@ -33,6 +33,7 @@ section h1 {
 
 footer {
   background-color: #121212;
+  
 }
 
 .social-buttons {
@@ -60,4 +61,46 @@ hr {
   margin: 15px;
   border: 0px;
   border-top: 1px solid #252525;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+form label {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+form input {
+  padding: 10px 5px;
+  background-color: #252525;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+form button {
+  border-radius: 100px;
+   padding: 10px 35px;
+  margin: 10px;
+  background-color: #1ed760;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#no-account {
+  color: #b3b3b3;
+  font-size: 14px;
 }
