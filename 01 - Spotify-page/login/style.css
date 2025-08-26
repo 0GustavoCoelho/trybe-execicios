@@ -33,7 +33,15 @@ section h1 {
 
 footer {
   background-color: #121212;
-  
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 10px;
+  color: #b3b3b3
+}
+
+footer a {
+  font-size: 10px;
+  color: #b3b3b3;
 }
 
 .social-buttons {
