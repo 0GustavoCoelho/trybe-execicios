@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <title>Inscrever-se Spotify</title>
+</head>
+
+<body>
+  <section>
+    <i class="bi bi-spotify logo-spotify"></i>
+
+    <h1>Se increva e comece a curtir</h1>
+
+    <form action="">
+      <label for="email-input">Endereço de email</label>
+      <input type="email" id="email-input" placeholder="nome@dominio.com">
+
+      <label for="password-input">Senha</label>
+      <input type="password" id="password-input" placeholder="Digite sua senha">
+
+      <label for="name-input">Nome</label>
+      <input type="text" id="name-input" placeholder="Este nome aparecerá no seu perfil">
+
+      <label for="birthdate-input">Data de nascimento</label>
+      <input type="number" id="birthdate-day-input" placeholder="dd">
+
+      <select name="" id="birthdate-month-input">
+        <option disabled value selected>Mês</option>
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+      </select>
+
+      <input type="number" id="birthdate-year-input" placeholder="yyyy">
+
+      <label>Gênero</label>
+      <label><input type="radio" name="gender">Homem</label>
+      <label><input type="radio" name="gender">Mulher</label>
+      <label><input type="radio" name="gender">Não Binário</label>
+      <label><input type="radio" name="gender">Outro</label>
+      <label><input type="radio" name="gender">Prefiro não dizer</label>
+
+      <h6>Termos e Condições</h6>
+      <div>
+        <input type="checkbox" name="" id="dont-send-messages">
+        <label for="dont-send-messages">Não quero receber mensagens de marketing do Spotify.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="" id="share-data">
+        <label for="share-data">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de
+          Marketing.</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="" id="agree-terms">
+        <label for="agree-terms">Eu concordo com os Termos e Condições de Uso do Spotify.</label>
+      </div>
+
+      <button>Inscrever-se</button>
+    </form>
+
+    <footer>
+      <p>Este site é protegido pelo reCAPTCHA e está sujeito à <a href="">política de Privacidade </a> e aos <a
+          href="">termos de Serviço </a> do Google.
+      </p>
+    </footer>
+
+  </section>
+</body>
+
+</html>
