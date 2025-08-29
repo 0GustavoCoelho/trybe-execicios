@@ -5,13 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Inscrever-se Spotify</title>
 </head>
 
 <body>
-  <section>
-    <i class="bi bi-spotify logo-spotify"></i>
 
+  <header>
+    <i class="bi bi-spotify logo-spotify"></i>
+  </header>
+
+  <section>
     <h1>Se increva e comece a curtir</h1>
 
     <form action="">
@@ -25,46 +33,57 @@
       <input type="text" id="name-input" placeholder="Este nome aparecerá no seu perfil">
 
       <label for="birthdate-input">Data de nascimento</label>
-      <input type="number" id="birthdate-day-input" placeholder="dd">
 
-      <select name="" id="birthdate-month-input">
-        <option disabled value selected>Mês</option>
-        <option value="1">Janeiro</option>
-        <option value="2">Fevereiro</option>
-        <option value="3">Março</option>
-        <option value="4">Abril</option>
-        <option value="5">Maio</option>
-        <option value="6">Junho</option>
-        <option value="7">Julho</option>
-        <option value="8">Agosto</option>
-        <option value="9">Setembro</option>
-        <option value="10">Outubro</option>
-        <option value="11">Novembro</option>
-        <option value="12">Dezembro</option>
-      </select>
+      <div id="birthdate">
 
-      <input type="number" id="birthdate-year-input" placeholder="yyyy">
+        <input type="number" id="birthdate-day-input" placeholder="dd">
+
+        <select name="" id="birthdate-month-input">
+          <option disabled value selected>Mês</option>
+          <option value="1">Janeiro</option>
+          <option value="2">Fevereiro</option>
+          <option value="3">Março</option>
+          <option value="4">Abril</option>
+          <option value="5">Maio</option>
+          <option value="6">Junho</option>
+          <option value="7">Julho</option>
+          <option value="8">Agosto</option>
+          <option value="9">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+
+        <input type="number" id="birthdate-year-input" placeholder="yyyy">
+      </div>
 
       <label>Gênero</label>
-      <label><input type="radio" name="gender">Homem</label>
-      <label><input type="radio" name="gender">Mulher</label>
-      <label><input type="radio" name="gender">Não Binário</label>
-      <label><input type="radio" name="gender">Outro</label>
-      <label><input type="radio" name="gender">Prefiro não dizer</label>
+      <label class="radio-button-label"><input type="radio" name="gender"><span>Homem</span></label>
+
+      <label class="radio-button-label"><input type="radio" name="gender"><span>Mulher</span></label>
+
+      <label class="radio-button-label"><input type="radio" name="gender"><span>Não Binário</span></label>
+
+      <label class="radio-button-label"><input type="radio" name="gender"><span>Outro</span></label>
+
+      <label class="radio-button-label"><input type="radio" name="gender"><span>Prefiro não dizer</span></label>
+
+        <hr>
 
       <h6>Termos e Condições</h6>
-      <div>
+
+      <div class="checkbox-field">
         <input type="checkbox" name="" id="dont-send-messages">
         <label for="dont-send-messages">Não quero receber mensagens de marketing do Spotify.</label>
       </div>
 
-      <div>
+      <div class="checkbox-field">
         <input type="checkbox" name="" id="share-data">
         <label for="share-data">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de
           Marketing.</label>
       </div>
 
-      <div>
+      <div class="checkbox-field">
         <input type="checkbox" name="" id="agree-terms">
         <label for="agree-terms">Eu concordo com os Termos e Condições de Uso do Spotify.</label>
       </div>
