@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-
 
 table{
   @apply w-full text-xs text-gray-400 text-left mt-10;
