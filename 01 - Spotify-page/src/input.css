@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/*@tailwind base;
+@tailwind components;
+@tailwind utilities;*/
+
+body{
+  @apply bg-spotify-gray flex flex-col min-h-screen;
+}
+
+
+*{
+  @apply m-0 p-0 font-sans;
+}
+
+header{
+  @apply bg-black flex p-15px;
+}
+
+header div{
+  @apply bg-black flex justify-between m-auto w-4/5;
+}
+
+.spotify-logo{
+  @apply w-4;
+}
