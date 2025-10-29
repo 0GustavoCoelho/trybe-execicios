@@ -18,25 +18,91 @@
 
     <form action="" method="get">
 
-    <div class="div-indentificacao">
-      <div class="div-logo-indentificacao">
-        <img class="avatar" src="./images/people_14919882.svg" alt="">
-        <h4>Identificação</h4>
+      <div class="div-indentificacao">
+        <div class="div-logo-indentificacao">
+          <img class="avatar" src="./images/people_14919882.svg" alt="">
+          <h4>Identificação</h4>
+        </div>
+
+        <div class="inputs-identificacao">
+          <div class="input-name">
+            <label for="name">Nome</label>
+            <input type="text" name="Nome" id="name">
+          </div>
+
+          <div class="input-email">
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email">
+          </div>
+
+        </div>
       </div>
 
-      <div class="inputs-identificacao">
-        <div class="input-name">
-          <label for="name">Nome</label>
-          <input type="text" name="Nome" id="name">
+      <div class="tamanho">
+        <div class="div-logo-indentificacao">
+          <img class="avatar" src="./images/people_14919882.svg" alt="">
+          <h4>Tamanho</h4>
         </div>
 
-        <div class="input-email">
-          <label for="email">Email</label>
-          <input type="email" name="Email" id="email">
-        </div>
+        <div class="div-opcoes-lanches">
+          <div class="lanche">
+            <div class="tamanho-lanche">
+              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+
+              <div>
+                <p class="opcao-lanche">Lanchão | 1Kg</p>
+                <p class="preco">R$ 20,00</p>
+              </div>
+            </div>
+
+            <div class="quantidade">
+              <button type="button" class="btn-menos-lanchao">-</button>
+              <p class="mostrador-quantidade" id="qtd-lanchao">0</p>
+              <button type="button" class="btn-mais-lanchao">+</button>
+            </div>
+          </div>
+
+          <div class="lanche">
+            <div class="tamanho-lanche">
+              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+
+              <div>
+                <p class="opcao-lanche">Lanche | 500g</p>
+                <p class="preco">R$ 15,00</p>
+              </div>
+            </div>
+
+            <div class="quantidade">
+              <button type="button" class="btn-menos-lanche">-</button>
+              <p class="mostrador-quantidade" id="qtd-lanche">0</p>
+              <button type="button" class="btn-mais-lanche">+</button>
+            </div>
+          </div>
+
+          <div class="lanche">
+            <div class="tamanho-lanche">
+              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+
+              <div>
+                <p class="opcao-lanche">Lanchinho | 250g</p>
+                <p class="preco">R$ 10,00</p>
+              </div>
+            </div>
+
+            <div class="quantidade">
+              <button type="button" class="btn-menos-lanchinho">-</button>
+              <p class="mostrador-quantidade" id="qtd-lanchinho">0</p>
+              <button type="button" class="btn-mais-lanchinho">+</button>
+            </div>
+          </div>
         
+        
+        
+        
+        
+        </div>
       </div>
-    </div>
+
 
     </form>
   </main>
