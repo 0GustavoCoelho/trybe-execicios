@@ -189,7 +189,8 @@ main {
   font-weight: 500;
 }
 
-.adicionais {
+.adicionais,
+.molhos {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -232,4 +233,42 @@ main {
   font-weight: 500;
   line-height: 155%;
   margin: 0;
+}
+
+.preco-molho {
+  color: var(--orange-8, #E8590C);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 155%;
+}
+
+.opcoes-molhos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.div-tipo-molho {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.opcoes-molhos label {
+  color: var(--other-black, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
