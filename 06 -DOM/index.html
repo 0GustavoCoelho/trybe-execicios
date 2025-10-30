@@ -8,189 +8,209 @@
   <title>Coelhadas Burguer</title>
 </head>
 
+
 <body>
-  <header>
-    <img style="width: 40px;" src="./images/logo.svg" alt="">
-  </header>
+  <div class="principal">
+    <main>
+      <header>
+        <img style="width: 40px;" src="./images/logo.svg" alt="">
+      </header>
 
-  <main>
-    <h1 class="envie-seu-pedido">Envie seu pedido</h1>
+      <h1 class="envie-seu-pedido">Envie seu pedido</h1>
 
-    <form action="" method="get">
+      <form action="" method="get">
 
-      <div class="div-indentificacao">
-        <div class="div-logo-indentificacao">
-          <img class="avatar" src="./images/people_14919882.svg" alt="">
-          <h4>Identificação</h4>
-        </div>
-
-        <div class="inputs-identificacao">
-          <div class="input-name">
-            <label for="name">Nome</label>
-            <input type="text" name="Nome" id="name">
+        <div class="div-indentificacao">
+          <div class="div-logo-indentificacao">
+            <img class="avatar" src="./images/people_14919882.svg" alt="">
+            <h4>Identificação</h4>
           </div>
 
-          <div class="input-email">
-            <label for="email">Email</label>
-            <input type="email" name="Email" id="email">
+          <div class="inputs-identificacao">
+            <div class="input-name">
+              <label for="name">Nome</label>
+              <input type="text" name="Nome" id="name">
+            </div>
+
+            <div class="input-email">
+              <label for="email">Email</label>
+              <input type="email" name="Email" id="email">
+            </div>
+          </div>
+        </div>
+
+        <div class="tamanho">
+          <div class="div-logo-indentificacao">
+            <img class="avatar" src="./images/people_14919882.svg" alt="">
+            <h4>Tamanho</h4>
           </div>
 
-        </div>
-      </div>
+          <div class="div-opcoes-lanches">
+            <div class="lanche">
+              <div class="tamanho-lanche">
+                <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
 
-      <div class="tamanho">
-        <div class="div-logo-indentificacao">
-          <img class="avatar" src="./images/people_14919882.svg" alt="">
-          <h4>Tamanho</h4>
-        </div>
+                <div>
+                  <p class="opcao-lanche">Lanchão | 1Kg</p>
+                  <p class="preco">R$ 20,00</p>
+                </div>
+              </div>
 
-        <div class="div-opcoes-lanches">
-          <div class="lanche">
-            <div class="tamanho-lanche">
-              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
-
-              <div>
-                <p class="opcao-lanche">Lanchão | 1Kg</p>
-                <p class="preco">R$ 20,00</p>
+              <div class="quantidade">
+                <button type="button" class="btn-menos-lanchao">-</button>
+                <p class="mostrador-quantidade" id="qtd-lanchao">0</p>
+                <button type="button" class="btn-mais-lanchao">+</button>
               </div>
             </div>
 
-            <div class="quantidade">
-              <button type="button" class="btn-menos-lanchao">-</button>
-              <p class="mostrador-quantidade" id="qtd-lanchao">0</p>
-              <button type="button" class="btn-mais-lanchao">+</button>
-            </div>
-          </div>
+            <div class="lanche">
+              <div class="tamanho-lanche">
+                <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
 
-          <div class="lanche">
-            <div class="tamanho-lanche">
-              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+                <div>
+                  <p class="opcao-lanche">Lanche | 500g</p>
+                  <p class="preco">R$ 15,00</p>
+                </div>
+              </div>
 
-              <div>
-                <p class="opcao-lanche">Lanche | 500g</p>
-                <p class="preco">R$ 15,00</p>
+              <div class="quantidade">
+                <button type="button" class="btn-menos-lanche">-</button>
+                <p class="mostrador-quantidade" id="qtd-lanche">0</p>
+                <button type="button" class="btn-mais-lanche">+</button>
               </div>
             </div>
 
-            <div class="quantidade">
-              <button type="button" class="btn-menos-lanche">-</button>
-              <p class="mostrador-quantidade" id="qtd-lanche">0</p>
-              <button type="button" class="btn-mais-lanche">+</button>
+            <div class="lanche">
+              <div class="tamanho-lanche">
+                <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+
+                <div>
+                  <p class="opcao-lanche">Lanchinho | 250g</p>
+                  <p class="preco">R$ 10,00</p>
+                </div>
+              </div>
+
+              <div class="quantidade">
+                <button type="button" class="btn-menos-lanchinho">-</button>
+                <p class="mostrador-quantidade" id="qtd-lanchinho">0</p>
+                <button type="button" class="btn-mais-lanchinho">+</button>
+              </div>
             </div>
           </div>
 
-          <div class="lanche">
-            <div class="tamanho-lanche">
-              <img class="burguer" src="./images/lanches-e-burger-85d8197cb6b95f00004af30c9b1d5c47.png" alt="">
+          <div class="adicionais">
+            <div class="div-logo-indentificacao">
+              <img class="avatar" src="./images/people_14919882.svg" alt="">
+              <h4>Adicionais</h4>
+            </div>
 
-              <div>
-                <p class="opcao-lanche">Lanchinho | 250g</p>
-                <p class="preco">R$ 10,00</p>
+            <div class="div-adicionais">
+              <div class="opcao-adicional">
+                <p class="nome-opcional">Ovo frito</p>
+                <p class="preco-opcional">R$ 1,50</p>
+              </div>
+
+              <div class="quantidade">
+                <button type="button" class="btn-menos-ovo">-</button>
+                <p class="mostrador-quantidade" id="qtd-ovo">0</p>
+                <button type="button" class="btn-mais-ovo">+</button>
               </div>
             </div>
 
-            <div class="quantidade">
-              <button type="button" class="btn-menos-lanchinho">-</button>
-              <p class="mostrador-quantidade" id="qtd-lanchinho">0</p>
-              <button type="button" class="btn-mais-lanchinho">+</button>
+            <div class="div-adicionais">
+              <div class="opcao-adicional">
+                <p class="nome-opcional">Abacaxi</p>
+                <p class="preco-opcional">R$ 1,00</p>
+              </div>
+
+              <div class="quantidade">
+                <button type="button" class="btn-menos-abacaxi">-</button>
+                <p class="mostrador-quantidade" id="qtd-abacaxi">0</p>
+                <button type="button" class="btn-mais-abacaxi">+</button>
+              </div>
             </div>
           </div>
-        </div>
 
 
-      </div>
+          <div class="molhos">
+            <div class="div-logo-indentificacao">
+              <img class="avatar" src="./images/people_14919882.svg" alt="">
+              <h4>Molhos</h4>
+              <p class="preco-molho"> + R$ 2,00 cada</p>
+            </div>
 
-      <div class="adicionais">
-        <div class="div-logo-indentificacao">
-          <img class="avatar" src="./images/people_14919882.svg" alt="">
-          <h4>Adicionais</h4>
-        </div>
+            <div class="opcoes-molhos">
 
-        <div class="div-adicionais">
-          <div class="opcao-adicional">
-            <p class="nome-opcional">Ovo frito</p>
-            <p class="preco-opcional">R$ 1,50</p>
+              <div class="div-tipo-molho">
+                <input type="checkbox" name="molho" id="molho-madeira">
+                <label for="molho-madeira">Molho madeira</label>
+              </div>
+
+              <div class="div-tipo-molho">
+                <input type="checkbox" name="molho" id="molho-barbecue">
+                <label for="molho-barbecue">Molho Barbecue</label>
+              </div>
+
+              <div class="div-tipo-molho">
+                <input type="checkbox" name="molho" id="molho-da-casa">
+                <label for="molho-da-casa">Molho da Casa</label>
+              </div>
+
+              <div class="div-tipo-molho">
+                <input type="checkbox" name="molho" id="alecrim-dourado">
+                <label for="alecrim-dourado">Alecrim Dourado</label>
+              </div>
+
+            </div>
           </div>
 
-          <div class="quantidade">
-            <button type="button" class="btn-menos-ovo">-</button>
-            <p class="mostrador-quantidade" id="qtd-ovo">0</p>
-            <button type="button" class="btn-mais-ovo">+</button>
-          </div>
-        </div>
+          <div class="batata-frita">
+            <div class="div-logo-indentificacao">
+              <img class="avatar" src="./images/people_14919882.svg" alt="">
+              <h4>Batata Frita</h4>
+              <p class="preco-molho"> + R$ 2,00 cada</p>
+            </div>
 
-        <div class="div-adicionais">
-          <div class="opcao-adicional">
-            <p class="nome-opcional">Abacaxi</p>
-            <p class="preco-opcional">R$ 1,00</p>
-          </div>
+            <div class="radio-batata">
+              <div>
+                <input type="radio" name="batata" id="sim">
+                <label for="sim">Sim, por favor!</label>
+              </div>
 
-          <div class="quantidade">
-            <button type="button" class="btn-menos-abacaxi">-</button>
-            <p class="mostrador-quantidade" id="qtd-abacaxi">0</p>
-            <button type="button" class="btn-mais-abacaxi">+</button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="molhos">
-        <div class="div-logo-indentificacao">
-          <img class="avatar" src="./images/people_14919882.svg" alt="">
-          <h4>Molhos</h4>
-          <p class="preco-molho"> + R$ 2,00 cada</p>
-        </div>
-
-        <div class="opcoes-molhos">
-
-          <div class="div-tipo-molho">
-            <input type="checkbox" name="molho" id="molho-madeira">
-            <label for="molho-madeira">Molho madeira</label>
+              <div>
+                <input type="radio" name="batata" id="nao">
+                <label for="nao">Não, Valeu!</label>
+              </div>
+            </div>
           </div>
 
-          <div class="div-tipo-molho">
-            <input type="checkbox" name="molho" id="molho-barbecue">
-            <label for="molho-barbecue">Molho Barbecue</label>
+
+          <div class="algum-comentario">
+            <div class="div-logo-indentificacao">
+              <img class="avatar" src="./images/people_14919882.svg" alt="">
+              <h4>Algum Comentário?</h4>
+            </div>
+
+            <textarea name="Comentario" id="" cols="30" rows="10" placeholder="Digite seu comentário aqui"></textarea>
+
           </div>
 
-          <div class="div-tipo-molho">
-            <input type="checkbox" name="molho" id="molho-da-casa">
-            <label for="molho-da-casa">Molho da Casa</label>
+          <div class="termos-aceite">
+            <input type="checkbox" name="" id="aceite">
+            <label for="aceite">Você aceita colocar sua vida em risco por livre e espontânea vontade?</label>
           </div>
 
-          <div class="div-tipo-molho">
-            <input type="checkbox" name="molho" id="alecrim-dourado">
-            <label for="alecrim-dourado">Alecrim Dourado</label>
+          <div class="botoes">
+            <button type="submit" class="btn-enviar">Enviar pedido</button>
+            <button type="button" class="btn-recuperar">Recuperar pedido anterior</button>
           </div>
+      </form>
 
-        </div>
-      </div>
-
-      <div class="batata-frita">
-        <div class="div-logo-indentificacao">
-          <img class="avatar" src="./images/people_14919882.svg" alt="">
-          <h4>Batata Frita</h4>
-          <p class="preco-molho"> + R$ 2,00 cada</p>
-        </div>
-
-        <div class="radio-batata">
-          <div>
-            <input type="radio" name="batata" id="sim">
-            <label for="sim">Sim, por favor!</label>
-          </div>
-          
-          <div>
-            <input type="radio" name="batata" id="nao">
-            <label for="nao">Não, Valeu!</label>
-          </div>
-        </div>
-      </div>
+    </main>
+    <div class="canto-laranja"></div>
+  </div>
 
 
-
-
-    </form>
-  </main>
 </body>
 
 </html>
