@@ -16,8 +16,10 @@ const btnMaisOvo = document.querySelector('.btn-mais-ovo');
 const btnMenosAbacaxi = document.querySelector('.btn-menos-abacaxi');
 const qtdAbacaxi = document.querySelector('#qtd-abacaxi');
 const btnMaisAbacaxi = document.querySelector('.btn-mais-abacaxi');
-const batata = document.getElementById('sim');
+const Batata = document.getElementById('sim');
 const comentario = document.querySelector('textarea');
+const listaNotaFiscal = document.getElementById('orderList');
+const nota = document.querySelector('.ticket');
 
 const atulizarQuantidade = (btnMenos, btnMais, qtdElementos) => {
   btnMenos.addEventListener ('click', () => {
@@ -56,10 +58,19 @@ form.addEventListener ('submit', (event) => {
   const molhos = document.querySelectorAll('input[name="molho"]:checked');
 
   if (molhos.length > 0) orderInfo.Molhos = molhos.length;
+  if (Batata.checked === true) orderInfo.Batata = 'sim';
+  if (comentario.value !== '') orderInfo.comentario = comentario.value;
 
-  if (batata.checked === true) orderInfo.batata = 'sim';
-  if (comentario !== '') orderInfo.comentario = comentario.value;
+  const itemsNotaFiscal = Object.entries(orderInfo);
 
-  console.log(orderInfo);
+  itemsNotaFiscal.forEach((item) => {
+    const newLi = document.createElement('li');
+    newLi.innerText = `${item[0]}: ${item[1]}`;
+    listaNotaFiscal.appendChild(newLi);
+  })
+
+  nota.style.display = 'block';
+
+  console.log(itemsNotaFiscal);
   
 })
