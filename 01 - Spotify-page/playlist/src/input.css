@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+table{
+  @apply w-full text-xs text-gray-400 text-left mt-10;
+}
+
+thead{
+  @apply border-b border-gray-600
+}
+
+thead th{
+  @apply font-extralight pb-2
+}
+
+tbody tr{
+  @apply hover:bg-gray-700;
+}
+
+tbody tr:first-child td{
+  @apply pt-3
+}
+
+tbody tr td{
+  @apply py-2
+}
+
+th:first-child, td:first-child{
+  @apply pl-5
+}
+
+th:last-child, td:last-child{
+  @apply pr-10 text-right
+}
+
+tbody tr td.song{
+  @apply flex flex-row
+}
+
+tbody tr td.song img{
+  @apply w-10 h-10 mr-4
+}
+
+tbody tr td div p:first-child{
+  @apply font-bold text-white 
+}

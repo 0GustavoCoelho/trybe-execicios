@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  color: white
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  font-size: 32px;
+}
+
+section {
+  width: 324px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 32px;
+}
+
+section h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form label {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+form input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+  background-color: #121212;
+  color: white;
+  padding: 12px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 0 0 1 #818181;
+  border-radius: 4px;
+}
+
+#birthdate {
+  display: flex;
+  flex-direction: row;
+}
+
+#birthdate input,
+select {
+  margin: 0px 6px;
+}
+
+#birthdate-day-input {
+  width: 20%;
+}
+
+#birthdate-month-input {
+  width: 50%;
+}
+
+#birthdate-year-input {
+  width: 40%;
+}
+
+.radio-button-label {
+  display: flex;
+}
+
+.radio-button-label span {
+  padding-left: 12px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.checkbox-field {
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin: 8px 0;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox-field label {
+  margin-top: 0;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+hr {
+  margin: 16px 12px;
+  border: 0px;
+  border-top: 1px solid #252525;
+}
+
+form button {
+  border-radius: 100px;
+  padding: 10px 45px;
+  margin: 30px;
+  background-color: #1ed760;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+  background-color: #121212;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 10px;
+  color: #b3b3b3
+}
