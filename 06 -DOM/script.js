@@ -1,5 +1,5 @@
 const inputName = document.getElementById('name');
-const inputEmail = document.querySelector ('#email');
+const inputEmail = document.querySelector('#email');
 const form = document.querySelector('form');
 const btnMenosLanchao = document.querySelector('.btn-menos-lanchao');
 const qtdLanchao = document.querySelector('#qtd-lanchao');
@@ -20,19 +20,21 @@ const Batata = document.getElementById('sim');
 const comentario = document.querySelector('textarea');
 const listaNotaFiscal = document.getElementById('orderList');
 const nota = document.querySelector('.ticket');
+const numeroPedido = document.getElementById('ticket-number');
+const btnRecuperar = document.querySelector('.btn-recuperar');
 
 const atulizarQuantidade = (btnMenos, btnMais, qtdElementos) => {
-  btnMenos.addEventListener ('click', () => {
+  btnMenos.addEventListener('click', () => {
     const quantidade = parseInt(qtdElementos.innerText);
-    if (quantidade > 0){
+    if (quantidade > 0) {
       qtdElementos.innerText = quantidade - 1;
     }
   })
 
   btnMais.addEventListener('click', () => {
-    qtdElementos.innerText = parseInt(qtdElementos.innerText) + 1; 
-  }) 
-}
+    qtdElementos.innerText = parseInt(qtdElementos.innerText) + 1;
+  })
+};
 
 atulizarQuantidade(btnMenosLanchao, btnMaisLanchao, qtdLanchao)
 atulizarQuantidade(btnMenosLanche, btnMaisLanche, qtdLanche)
@@ -40,12 +42,18 @@ atulizarQuantidade(btnMenosLanchinho, btnMaisLanchinho, qtdLanchinho)
 atulizarQuantidade(btnMenosOvo, btnMaisOvo, qtdOvo)
 atulizarQuantidade(btnMenosAbacaxi, btnMaisAbacaxi, qtdAbacaxi)
 
+const geraNumeroPedido = () => {
+  const numero = Math.ceil(Math.random() * 100);
+  numeroPedido.innerText = numero;
 
-form.addEventListener ('submit', (event) => {
-  event.preventDefault ();
+  return numero;
+}
 
+const criaNotaFiscal = () => {
+  listaNotaFiscal.innerHTML = '';
   let orderInfo = {};
 
+  orderInfo.Id = geraNumeroPedido();
   orderInfo.Nome = inputName.value;
   orderInfo.Email = inputEmail.value;
 
@@ -63,14 +71,36 @@ form.addEventListener ('submit', (event) => {
 
   const itemsNotaFiscal = Object.entries(orderInfo);
 
+  let sum = 0;
+
   itemsNotaFiscal.forEach((item) => {
     const newLi = document.createElement('li');
     newLi.innerText = `${item[0]}: ${item[1]}`;
     listaNotaFiscal.appendChild(newLi);
+
+    if (item[0] === 'Lanchao') sum += parseInt(item[1]) * 20;
+    if (item[0] === 'Lanche') sum += parseInt(item[1]) * 15;
+    if (item[0] === 'Lanchinho') sum += parseInt(item[1]) * 10;
+    if (item[0] === 'Ovo') sum += parseInt(item[1]) * 1.5;
+    if (item[0] === 'Abacaxi') sum += parseInt(item[1]);
+    if (item[0] === 'Molhos') sum += molhos.length * 2;
+    if (item[0] === 'Batata') sum += 2;
   })
+  
+  const newH3 = document.createElement('h3');
+  newH3.innerText = `TOTAL: R$${sum.toFixed(2)}`;
+  listaNotaFiscal.appendChild(newH3);
+
+  orderInfo.Total = sum;
 
   nota.style.display = 'block';
 
   console.log(itemsNotaFiscal);
-  
-})
+};
+
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  criaNotaFiscal();
+});
